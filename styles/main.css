@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* font-family: 'Poppins', sans-serif;
+	background: ; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/* color: ; */
+}
+
+.wrapper {
+	/* max-width: 1210px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px; */
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.btn {}
+
+/* ========== HEADER ========== */
+/* ========== HEADER ========== */
+
+/* ========== MAIN ========== */
+/* ========== MAIN ========== */
+
+/* ========== FOOTER ========== */
+/* ========== FOOTER ========== */
