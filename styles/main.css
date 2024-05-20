@@ -110,6 +110,7 @@ h6 {
 .arrow {
 	text-align: center;
 }
+
 /* ========== HERO ========== */
 
 /* ========== MAIN ========== */
@@ -126,6 +127,20 @@ h6 {
 	.nav-list li:nth-child(2) {
 		margin: 0 0 0 450px;
 	}
+
+	.navigation {
+		margin: 40px 0 100px 0;
+	}
+
+	.hero-menu {
+		flex-direction: column-reverse;
+		text-align: center;
+		margin: 0 0 40px 0;
+	}
+
+	.hero-text {
+		margin: 0 auto 20px auto;
+	}
 }
 
 /* TABLET */
@@ -141,6 +156,28 @@ h6 {
 	.nav-list li:nth-child(3) {
 		margin: 0 0 0 60px;
 	}
+
+	.navigation {
+		margin: 40px 0 50px 0;
+	}
+
+	.hero-name {
+		font-size: 46px;
+	}
+
+	.hero-text {
+		width: auto;
+		font-size: 16px;
+	}
+
+	.hero-img {
+		width: 320px;
+		height: 240px;
+	}
+
+	.arrow {
+		display: none;
+	}
 }
 
 /* MOBILE */
@@ -155,6 +192,14 @@ h6 {
 
 	.nav-list li:nth-child(3) {
 		margin: 0 0 0 30px;
+	}
+
+	.hero-title {
+		font-size: 16px;
+	}
+
+	.hero-name {
+		font-size: 40px;
 	}
 }
 
