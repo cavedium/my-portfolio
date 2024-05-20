@@ -116,3 +116,51 @@ h6 {
 
 /* ========== FOOTER ========== */
 /* ========== FOOTER ========== */
+
+/* PC */
+@media (max-width: 1070px) {
+	.wrapper {
+		max-width: 769px;
+	}
+
+	.nav-list li:nth-child(2) {
+		margin: 0 0 0 450px;
+	}
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+	.wrapper {
+		max-width: 481px;
+	}
+
+	.nav-list li:nth-child(2) {
+		margin: 0 0 0 200px;
+	}
+
+	.nav-list li:nth-child(3) {
+		margin: 0 0 0 60px;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+	.wrapper {
+		max-width: 321px;
+	}
+
+	.nav-list li:nth-child(2) {
+		margin: 0 0 0 70px;
+	}
+
+	.nav-list li:nth-child(3) {
+		margin: 0 0 0 30px;
+	}
+}
+
+/* MINI MOBILE */
+@media (max-width: 320px) {
+	.wrapper {
+		max-width: auto;
+	}
+}
