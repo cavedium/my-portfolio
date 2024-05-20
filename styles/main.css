@@ -109,9 +109,33 @@ h6 {
 
 .arrow {
 	text-align: center;
+	margin: 0 0 220px 0;
+}
+/* ========== HERO ========== */
+
+/* ========== ABOUT ME ========== */
+.about-me-title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 108%;
+	letter-spacing: 0.04em;
+	color: #151717;
+	padding: 0 0 0 20px;
 }
 
-/* ========== HERO ========== */
+.about-me-text {
+	width: 850px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 144%;
+	letter-spacing: 0.04em;
+	color: #1f2626;
+	border-left: 4px solid #5222d0;
+	margin: 20px 0 140px 0;
+	padding: 0 0 0 15px;
+}
+
+/* ========== ABOUT ME ========== */
 
 /* ========== MAIN ========== */
 
