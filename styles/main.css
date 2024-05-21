@@ -32,6 +32,14 @@ h6 {
 	text-decoration: none;
 }
 
+.title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 108%;
+	letter-spacing: 0.04em;
+	color: #151717;
+}
+
 .btn {
 	border-radius: 6px;
 	padding: 12px 20px;
@@ -111,15 +119,11 @@ h6 {
 	text-align: center;
 	margin: 0 0 220px 0;
 }
+
 /* ========== HERO ========== */
 
 /* ========== ABOUT ME ========== */
 .about-me-title {
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 108%;
-	letter-spacing: 0.04em;
-	color: #151717;
 	padding: 0 0 0 20px;
 }
 
@@ -136,6 +140,79 @@ h6 {
 }
 
 /* ========== ABOUT ME ========== */
+
+/* ========== PROJECTS ========== */
+.projects-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 0 60px 0;
+}
+
+.projects-title {
+	margin: 0 0 35px 0;
+}
+
+.project-card {
+	border-radius: 6px;
+	width: 522px;
+	height: 636px;
+	box-shadow: 2px 2px 32px 0 rgba(40, 38, 44, 0.15);
+	background: #f5f2fd;
+}
+
+.project-img {
+	border-radius: 6px;
+}
+
+.project-card-title {
+	margin: 30px 0 10px 25px;
+}
+
+.project-card-tech {
+	display: flex;
+	gap: 10px;
+	margin: 0 0 20px 25px;
+}
+
+.project-card-tech-item {
+	border-radius: 4px;
+	padding: 8px 16px;
+	background: #5222d0;
+
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 140%;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #dbffff;
+}
+
+.project-card-text {
+	width: 485px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.04em;
+	color: #1f2626;
+	margin: 0 0 0 25px;
+}
+
+.see-all-btn {
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+
+.projects-link {
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
+	color: #dbffff;
+	text-transform: uppercase;
+	padding: 20px 75px;
+}
+
+/* ========== PROJECTS ========== */
 
 /* ========== MAIN ========== */
 
@@ -172,6 +249,12 @@ h6 {
 
 	.about-me-text {
 		width: auto;
+	}
+
+	.projects-list {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
 	}
 }
 
@@ -210,6 +293,19 @@ h6 {
 	.arrow {
 		display: none;
 	}
+
+	.about-me-text {
+		margin-bottom: 100px;
+	}
+
+	.project-card,
+	.project-img {
+		width: 480px;
+	}
+
+	.project-card-text {
+		width: 450px;
+	}
 }
 
 /* MOBILE */
@@ -233,6 +329,30 @@ h6 {
 	.hero-name {
 		font-size: 40px;
 	}
+
+	.project-card {
+		width: 365px;
+		height: 575px;
+		padding-bottom: 20px;
+	}
+
+	.project-img {
+		width: 365px;
+		height: 300px;
+	}
+
+	.project-card-title {
+		font-size: 20px;
+	}
+
+	.project-card-tech {
+		flex-wrap: wrap;
+	}
+
+	.project-card-text {
+        width: 340px;
+    }
+
 }
 
 /* MINI MOBILE */
