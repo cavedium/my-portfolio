@@ -335,13 +335,11 @@ h6 {
 	}
 
 	.project-card {
-		width: 365px;
-		height: 575px;
-		padding-bottom: 20px;
+		width: 320px;
 	}
 
 	.project-img {
-		width: 365px;
+		width: 320px;
 		height: 300px;
 	}
 
@@ -354,7 +352,7 @@ h6 {
 	}
 
 	.project-card-text {
-        width: 340px;
+        width: 280px;
     }
 
 }
