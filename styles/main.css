@@ -225,6 +225,7 @@ h6 {
 	justify-content: space-between;
 	column-gap: 100px;
 	row-gap: 60px;
+	margin: 0 0 200px 0;
 }
 
 .skills-list-item {
@@ -251,10 +252,53 @@ h6 {
 }
 
 /* ========== SKILLS ========== */
-
 /* ========== MAIN ========== */
 
 /* ========== FOOTER ========== */
+.footer-list-links {
+	display: flex;
+	justify-content: center;
+	gap: 80px;
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+
+.footer-img-text {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 93%;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	/* text-align: center; */
+	color: #1f2626;
+	margin: 10px 0 0 0;
+}
+
+.footer-list-pages {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+
+.page-link {
+	font-weight: 400;
+	font-size: 14px;
+	color: #1f2626;
+}
+
+.footer-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 186%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #1f2626;
+	text-align: center;
+	margin: 0 0 100px 0;
+}
+
 /* ========== FOOTER ========== */
 
 /* PC */
@@ -392,6 +436,10 @@ h6 {
 	.skills-list {
 		column-gap: 50px;
 		row-gap: 60px;
+	}
+
+	.footer-list-links {
+		gap: 70px;
 	}
 }
 
