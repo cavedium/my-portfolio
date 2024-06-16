@@ -51,16 +51,6 @@ h6 {
 	background-color: #5222D0;
 }
 
-.element-animation {
-	opacity: 0;
-}
-
-.element-show {
-	opacity: 1;
-	transform: translateX(-150%);
-	animation: ani 2s forwards;
-}
-
 /* ========== HEADER ========== */
 .navigation {
 	margin: 40px 0 100px 0;
@@ -262,15 +252,5 @@ h6 {
 @media (max-width: 320px) {
 	.wrapper {
 		max-width: auto;
-	}
-}
-
-@keyframes ani {
-	0% {
-		transform: translateX(-150%);
-	}
-
-	100% {
-		transform: translateY(0);
 	}
 }

@@ -51,21 +51,6 @@ h6 {
 	background-color: #5222D0;
 }
 
-.hero {
-	transform: translateX(-150%);
-	animation: ani 2s forwards;
-}
-
-.element-animation {
-	opacity: 0;
-}
-
-.element-show {
-	opacity: 1;
-	/* transform: translateX(-150%); */
-	animation: ani 2s forwards;
-}
-
 /* ========== HEADER ========== */
 .navigation {
 	margin: 40px 0 180px 0;
@@ -478,4 +463,14 @@ h6 {
 	100% {
 		transform: translateY(0);
 	}
+}
+
+.element-animation {
+	opacity: 0;
+}
+
+.element-show {
+	opacity: 1;
+	/* transform: translateX(-150%); */
+	animation: ani 2s forwards;
 }
