@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Montserrat", serif;
+	background: #FAFAFA;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #151717;
+}
+
+.wrapper {
+	max-width: 1070px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 108%;
+	letter-spacing: 0.04em;
+	color: #151717;
+}
+
+.btn {
+	border-radius: 6px;
+	padding: 12px 20px;
+	text-align: center;
+	background-color: #5222D0;
+}
+
+button {
+	border-color: #5222D0;
+	width: 535px;
+}
+
+/* ========== HEADER ========== */
+.navigation {
+	margin: 40px 0 120px 0;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-list li:nth-child(2) {
+	margin: 0 0 0 750px;
+}
+
+.nav-list li:nth-child(3) {
+	margin: 0 0 0 100px;
+}
+
+.nav-list-item-link,
+.hero-link {
+	font-weight: 500;
+	font-size: 16px;
+	color: #1f2626;
+}
+
+.btn {
+	color: #dbffff;
+}
+
+/* ========== HEADER ========== */
+
+/* ========== MAIN========== */
+.contact-form {
+	margin: 0 0 0 270px;
+}
+
+.contact-text {
+	font-weight: 400;
+	font-size: 14px;
+	color: #1f2626;
+}
+
+input {
+	border: 1px solid #534084;
+	border-radius: 6px;
+	width: 532px;
+	height: 48px;
+	margin: 5px 0 30px 0;
+
+	font-weight: 500;
+	font-size: 16px;
+	color: #1f2626;
+	padding: 0 0 0 10px;
+}
+
+/* ========== MAIN========== */
+
+/* PC */
+@media (max-width: 1070px) {
+	.wrapper {
+		max-width: 769px;
+	}
+
+	.nav-list li:nth-child(2) {
+		margin: 0 0 0 450px;
+	}
+
+	.navigation {
+		margin: 40px 0 100px 0;
+	}
+
+	.contact-form {
+		margin: 0 0 100px 100px;
+	}
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+	.wrapper {
+		max-width: 481px;
+	}
+
+	.nav-list li:nth-child(2) {
+		margin: 0 0 0 200px;
+	}
+
+	.nav-list li:nth-child(3) {
+		margin: 0 0 0 60px;
+	}
+
+	.navigation {
+		margin: 40px 0 50px 0;
+	}
+
+	.contact-form {
+		margin: 0 0 50px 0;
+	}
+
+	input {
+		max-width: 470px;
+	}
+	button {
+		max-width: 480px;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+	.wrapper {
+		max-width: 321px;
+	}
+
+	.nav-list li:nth-child(2) {
+		margin: 0 0 0 70px;
+	}
+
+	.nav-list li:nth-child(3) {
+		margin: 0 0 0 30px;
+	}
+
+	input {
+		max-width: 310px;
+	}
+	button {
+		max-width: 320px;
+	}
+}
+
+/* MINI MOBILE */
+@media (max-width: 320px) {
+	.wrapper {
+		max-width: auto;
+	}
+}
