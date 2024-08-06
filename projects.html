@@ -10,9 +10,18 @@
 		href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,800;1,800&family=Tinos&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="./styles/projects.css">
+	<link rel="stylesheet" href="./styles/night-theme.css">
+
+	<script src="./scrypt/main.js"></script>
 </head>
 
 <body>
+	<script>
+		const theme = localStorage.getItem("theme")
+		if (theme) {
+			document.body.classList.add(localStorage.getItem("theme"))
+		}
+	</script>
 	<header class="header">
 		<div class="wrapper">
 			<nav class="navigation">
@@ -169,9 +178,6 @@
 			</div>
 		</section>
 	</main>
-
-
-	<script src="./scrypt/main.js"></script>
 </body>
 
 </html>
