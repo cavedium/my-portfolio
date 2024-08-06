@@ -1,0 +1,311 @@
+/* checkbox settings 👇 */
+
+.switch {
+	/* global */
+	--total_transition_duration: .3s;
+	/* switch */
+	--slider_width: 2.875em;
+	--slider_height: 1.5em;
+	--slider_light_bg: linear-gradient(90deg, #f32a85 0%, #f19d36 100%);
+	--slider_night_bg: linear-gradient(90deg, #1701a1 0%, #af0693 75%);
+	--slider_offset: calc((var(--slider_height) - var(--circle_diameter)) / 2);
+	--slider_radius: calc(var(--slider_height) / 2);
+	/* circle */
+	--circle_diameter: 1.125em;
+	--circle_rotation: 360deg;
+	/* svg */
+	--svg_width: var(--circle_diameter);
+	--sun-color: #fff;
+	--moon-color: #fff;
+
+	right: 0;
+	top: 0;
+	position: absolute;
+	margin: 15px 15px 0 0;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider svg {
+	position: absolute;
+	height: auto;
+	color: var(--svg-color);
+	transition: var(--total_transition_duration) ease;
+	width: 100%;
+}
+
+.circle svg.sun {
+	transform: scale(1);
+	color: var(--sun-color);
+}
+
+.circle svg.moon {
+	transform: scale(0);
+	color: var(--moon-color);
+	width: calc(100% - 2px);
+}
+
+.slider {
+	display: inline-block;
+	width: var(--slider_width);
+	height: var(--slider_height);
+	border-radius: var(--slider_radius);
+	position: relative;
+	cursor: pointer;
+	transition: var(--total_transition_duration) ease;
+	overflow: hidden;
+}
+
+.slider::before,
+.slider::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	transition: var(--total_transition_duration) ease;
+}
+
+/* ::before and ::after backgrounds are needed for smooth 
+transition of gradients otherwise there is no way :\ */
+.slider::before {
+	opacity: 0;
+	background: var(--slider_night_bg);
+}
+
+.slider::after {
+	opacity: 1;
+	background: var(--slider_light_bg);
+}
+
+/* ------------ */
+
+.circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--circle_diameter);
+	height: var(--circle_diameter);
+	position: absolute;
+	top: var(--slider_offset);
+	left: var(--slider_offset);
+	transition: var(--total_transition_duration) ease;
+	z-index: 10;
+}
+
+/* actions */
+
+.switch input:checked+.slider::before {
+	opacity: 1;
+}
+
+.switch input:checked+.slider::after {
+	opacity: 0;
+}
+
+.switch input:active+.slider .circle {
+	transform: scale(0.9);
+}
+
+.switch input:checked+.slider .circle {
+	left: calc(100% - var(--circle_diameter) - var(--slider_offset));
+}
+
+.switch input:checked+.slider .sun {
+	transform: scale(0) rotate(var(--circle_rotation));
+}
+
+.switch input:checked+.slider .moon {
+	transform: scale(1) rotate(var(--circle_rotation));
+}
+
+/* DARK MODE */
+body {
+	transition: background-color .4s;
+}
+
+body.night-theme {
+	background-color: #041F31;
+}
+
+.nav-list-item-link {
+	transition: color .4s;
+}
+
+body.night-theme .nav-list-item-link {
+	color: #BDEBEA;
+}
+
+.btn {
+	transition: background .4s, color .4s;
+}
+
+body.night-theme .btn {
+	background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+	;
+	color: #252728;
+}
+
+.hero-title {
+	transition: color .4s;
+}
+
+body.night-theme .hero-title {
+	color: #d7e5ec;
+}
+
+.hero-name {
+	transition: background .4s;
+}
+
+body.night-theme .hero-name {
+	background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+	transition: color .4s;
+}
+
+body.night-theme .hero-text {
+	color: #bdebea;
+}
+
+body.night-theme .hero-menu {
+	justify-content: space-between;
+}
+
+body.night-theme .hero-img {
+	width: 500px;
+	height: 400px;
+}
+
+.title {
+	transition: color .4s;
+}
+
+body.night-theme .title {
+	color: #BDEBEA;
+}
+
+.about-me-text {
+	transition: border-left-color .4s, color .4s;
+}
+
+body.night-theme .about-me-text {
+	border-left-color: #00d9f5;
+	color: #bdebea;
+}
+
+.project-card {
+	transition: background .4s;
+}
+
+body.night-theme .project-card {
+	background: #222525;
+}
+
+.project-card-title {
+	transition: color .4s;
+}
+
+body.night-theme .project-card-title {
+	color:#d9f2f2;
+}
+
+.project-card-tech-item {
+	transition: background .4s, color .4s;
+}
+
+body.night-theme .project-card-tech-item {
+	background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+	color: #1f2626;
+}
+
+.project-card-text {
+	transition: color .4s;
+}
+
+body.night-theme .project-card-text {
+	color: #bdebea;
+}
+
+.skills-text {
+	transition: color .4s;
+}
+
+body.night-theme .skills-text {
+	color: #bdebea;
+}
+
+.footer-img-text {
+	transition: color .4s;
+}
+
+body.night-theme .footer-img-text {
+	color: #BDEBEA;
+}
+
+.page-link {
+	transition: color .4s;
+}
+
+body.night-theme .page-link {
+	color: #BDEBEA;
+}
+
+.footer-text {
+	transition: color .4s;
+}
+
+body.night-theme .footer-text {
+	color: #BDEBEA;
+}
+
+.active {
+	transition: text-decoration-color .4s;
+}
+
+body.night-theme .active {
+	text-decoration-color: #00f5a0;
+}
+
+.contact-text {
+	transition: color .4s;
+}
+
+body.night-theme .contact-text {
+	color: #bdebea;
+}
+
+input {
+	transition: .4s;
+}
+
+body.night-theme input {
+	border: 1px solid #bdebea;
+	color: #919b9b;
+}
+
+body.night-theme #submit {
+	border-color: #00f5a0;
+}
+
+@media (max-width: 768px) {
+	body.night-theme .hero-img {
+		width: 320px;
+		height: 240px;
+	}
+}
+
+@media (max-width: 480px) {
+	.switch {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		margin: 0 0 15px 0;
+	}
+}
+/* DARK MODE */
