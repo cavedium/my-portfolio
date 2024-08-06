@@ -169,6 +169,7 @@ h6 {
 }
 
 .project-card-title {
+	text-transform: uppercase;
 	margin: 30px 0 10px 25px;
 }
 
@@ -440,6 +441,13 @@ h6 {
 
 	.footer-list-links {
 		gap: 70px;
+	}
+
+	.switch {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		margin: 0 0 15px 0;
 	}
 }
 

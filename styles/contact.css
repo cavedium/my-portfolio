@@ -103,6 +103,7 @@ input {
 	width: 532px;
 	height: 48px;
 	margin: 5px 0 30px 0;
+	background: transparent;
 
 	font-weight: 500;
 	font-size: 16px;
