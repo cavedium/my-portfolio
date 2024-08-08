@@ -11,8 +11,10 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="./styles/contact.css">
 	<link rel="stylesheet" href="./styles/night-theme.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<script src="./scrypt/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -26,13 +28,13 @@
 		<div class="wrapper">
 			<nav class="navigation">
 				<ul class="nav-list list">
-					<li class="nav-list-item">
+					<li class="nav-list-item" data-aos="fade-down" data-aos-duration="1000">
 						<a href="./index.html" class="nav-list-item-link link">Home</a>
 					</li>
-					<li class="nav-list-item">
+					<li class="nav-list-item" data-aos="fade-down" data-aos-duration="1500">
 						<a href="./projects.html" class="nav-list-item-link link">Projects</a>
 					</li>
-					<li class="nav-list-item">
+					<li class="nav-list-item" data-aos="fade-down" data-aos-duration="2000">
 						<a href="./contact.html" class="nav-list-item-link link btn">Contact</a>
 					</li>
 				</ul>
@@ -46,31 +48,35 @@
 				<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 					<input type="hidden" name="access_key" value="3733e23e-3de8-4bbb-832c-2e0e9cf76696">
 					<ul class="contact-list list">
-						<li class="contact-list-item">
+						<li class="contact-list-item" data-aos="fade-right" data-aos-duration="1500">
 							<label for="name" class="contact-text">Name</label>
 						</li>
-						<li class="contact-list-item">
-							<input type="text" id="name" name="name" required placeholder="Enter your name" class="input-text">
+						<li class="contact-list-item" data-aos="fade-right" data-aos-duration="1500">
+							<input type="text" id="name" name="name" required placeholder="Enter your name"
+								class="input-text">
 						</li>
-						<li class="contact-list-item">
+						<li class="contact-list-item" data-aos="fade-left" data-aos-duration="1500">
 							<label for="email" class="contact-text">Email</label>
 						</li>
-						<li class="contact-list-item">
-							<input type="email" id="email" name="email" required placeholder="Enter your email" class="input-text">
+						<li class="contact-list-item" data-aos="fade-left" data-aos-duration="1500">
+							<input type="email" id="email" name="email" required placeholder="Enter your email"
+								class="input-text">
 						</li>
-						<li class="contact-list-item">
+						<li class="contact-list-item" data-aos="fade-right" data-aos-duration="1500">
 							<label for="telegram" class="contact-text">Telegram</label>
 						</li>
-						<li class="contact-list-item">
-							<input type="telegram" id="telegram" name="telegram" required placeholder="Enter your Telegram" class="input-text">
+						<li class="contact-list-item" data-aos="fade-right" data-aos-duration="1500">
+							<input type="telegram" id="telegram" name="telegram" required
+								placeholder="Enter your Telegram" class="input-text">
 						</li>
-						<li class="contact-list-item">
+						<li class="contact-list-item" data-aos="fade-left" data-aos-duration="1500">
 							<label for="Message" class="contact-text">Message</label>
 						</li>
-						<li class="contact-list-item">
-							<input type="text" id="message" name="message" required placeholder="Your message..." class="input-text">
+						<li class="contact-list-item" data-aos="fade-left" data-aos-duration="1500">
+							<input type="text" id="message" name="message" required placeholder="Your message..."
+								class="input-text">
 						</li>
-						<li class="contact-list-item">
+						<li class="contact-list-item" data-aos="fade-up" data-aos-duration="1500">
 							<button type="submit" id="submit" class="nav-list-item-link btn">Submit</button>
 						</li>
 					</ul>
@@ -78,6 +84,12 @@
 			</div>
 		</section>
 	</main>
+
+	<script>
+		AOS.init({
+			once: true
+		});
+	</script>
 </body>
 
 </html>

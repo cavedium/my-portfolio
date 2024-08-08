@@ -11,8 +11,10 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="./styles/main.css">
 	<link rel="stylesheet" href="./styles/night-theme.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	<script defer src="./scrypt/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -26,18 +28,18 @@
 		<div class="wrapper">
 			<nav class="navigation">
 				<ul class="nav-list list">
-					<li class="nav-list-item">
+					<li class="nav-list-item" data-aos="fade-down" data-aos-duration="1000">
 						<a href="./index.html" class="nav-list-item-link link">Home</a>
 					</li>
-					<li class="nav-list-item">
+					<li class="nav-list-item" data-aos="fade-down" data-aos-duration="1500">
 						<a href="./projects.html" class="nav-list-item-link link">Projects</a>
 					</li>
-					<li class="nav-list-item">
+					<li class="nav-list-item" data-aos="fade-down" data-aos-duration="2000">
 						<a href="./contact.html" class="nav-list-item-link link btn">Contact</a>
 					</li>
 				</ul>
 			</nav>
-			<label class="switch">
+			<label class="switch" data-aos="fade-down" data-aos-duration="1000">
 				<input type="checkbox" id="night-theme-btn">
 				<span class="slider">
 					<span class="circle">
@@ -80,27 +82,28 @@
 				<ul class="hero-menu list">
 					<li class="hero-menu-item">
 						<ul class="hero-info list">
-							<li class="hero-info-item">
+							<li class="hero-info-item" data-aos="fade-right" data-aos-duration="1000">
 								<h1 class="hero-title">Developer</h1>
 							</li>
-							<li class="hero-info-item">
+							<li class="hero-info-item" data-aos="fade-right" data-aos-duration="1500">
 								<p class="hero-name">Alex Shport</p>
 							</li>
-							<li class="hero-info-item">
+							<li class="hero-info-item" data-aos="fade-right" data-aos-duration="2000">
 								<p class="hero-text">An inquisitive student, skilled in leadership and fast to learn,
 									seeking to leverage solid development skills with focus on collaboration,
 									communication and passion.</p>
 							</li>
-							<li class="hero-info-item">
+							<li class="hero-info-item" data-aos="fade-right" data-aos-duration="2500">
 								<a href="#" class="hero-link link btn">Contact me</a>
 							</li>
 						</ul>
 					</li>
-					<li class="hero-menu-item">
-						<img src="./img/hero.png" alt="Man works" class="hero-img" id="hero-img" width="578" height="433">
+					<li class="hero-menu-item" data-aos="fade-left" data-aos-duration="1000">
+						<img src="./img/hero.png" alt="Man works" class="hero-img" id="hero-img" width="578"
+							height="433">
 					</li>
 				</ul>
-				<div class="arrow">
+				<div class="arrow" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-down">
 					<a href="#about-me" class="arrow-scroll-link link">
 						<img src="./img/arrow-scroll.svg" alt="arrow" class="arrow-scroll" id="arrow-scroll">
 					</a>
@@ -111,10 +114,10 @@
 		<!-- About me -->
 		<section class="about-me">
 			<div class="wrapper">
-				<h2 id="about-me" class="about-me-title title">
+				<h2 id="about-me" class="about-me-title title" data-aos="fade-right" data-aos-duration="1500">
 					About me
 				</h2>
-				<p class="about-me-text">
+				<p class="about-me-text" data-aos="fade-up-right" data-aos-duration="2000">
 					My name is Alexander. I am 20 y.o. I am from beautiful Ukraine. I enjoy creating things that live on
 					the internet, whether that be websites, video games, or anything in between.
 				</p>
@@ -124,9 +127,9 @@
 		<!-- Projects -->
 		<section class="projects">
 			<div class="wrapper">
-				<h2 class="projects-title title">Projects</h2>
+				<h2 class="projects-title title" data-aos="fade-right" data-aos-duration="1500">Projects</h2>
 				<ul class="projects-list list">
-					<li class="projects-list-item">
+					<li class="projects-list-item" data-aos="fade-up-right" data-aos-duration="2000">
 						<ul class="project-card list">
 							<li class="project-card-item">
 								<img src="./img/project-1.jpg" alt="project" class="project-img" width="522"
@@ -158,7 +161,7 @@
 							</li>
 						</ul>
 					</li>
-					<li class="projects-list-item">
+					<li class="projects-list-item" data-aos="fade-up-left" data-aos-duration="2000">
 						<ul class="project-card list">
 							<li class="project-card-item">
 								<img src="./img/project-1.jpg" alt="project" class="project-img" width="522"
@@ -191,7 +194,7 @@
 						</ul>
 					</li>
 				</ul>
-				<div class="see-all-btn">
+				<div class="see-all-btn" data-aos="fade-up" data-aos-duration="2000">
 					<a href="./projects.html" class="projects-link link btn">See all projects</a>
 				</div>
 			</div>
@@ -200,60 +203,60 @@
 		<!-- Skills -->
 		<section class="skills">
 			<div class="wrapper">
-				<h2 class="skills-title title">Skills</h2>
+				<h2 class="skills-title title" data-aos="fade-right" data-aos-duration="1500">Skills</h2>
 				<ul class="skills-list list">
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/js-icon.svg" alt="Javascript" class="skills-logo" width="120" height="120">
 						<p class="skills-text">Javascript</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/ts-icon.svg" alt="Typescript" class="skills-logo" width="120" height="120">
 						<p class="skills-text">Typescript</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/mongodb-icon.svg" alt="Mongo Db" class="skills-logo" width="120" height="120">
 						<p class="skills-text">Mongo DB</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/postgrest-icon.svg" alt="Postgresql" class="skills-logo" width="120"
 							height="120">
 						<p class="skills-text">Postgresql</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/jest-icon.svg" alt="Jest" class="skills-logo" width="120" height="120">
 						<p class="skills-text">Jest</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/express-icon.svg" alt="Express JS" class="skills-logo" width="120" height="120">
 						<p class="skills-text">Express JS</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/nestjs-icon.svg" alt="Nest JS" class="skills-logo" width="120" height="120">
 						<p class="skills-text">Nest JS</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/docker-icon.svg" alt="Docker" class="skills-logo" width="120" height="120">
 						<p class="skills-text">Docker</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/react-icon.svg" alt="React JS" class="skills-logo" width="120" height="120">
 						<p class="skills-text">React JS</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/reactnative-icon.svg" alt="React Nactive" class="skills-logo" width="120"
 							height="120">
 						<p class="skills-text">React Nactive</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/styled-icon.svg" alt="Styled Components" class="skills-logo" width="120"
 							height="120">
 						<p class="skills-text">Styled</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/redux-icon.svg" alt="Redux" class="skills-logo" width="120" height="120">
 						<p class="skills-text">Redux</p>
 					</li>
-					<li class="skills-list-item">
+					<li class="skills-list-item" data-aos="flip-up" data-aos-duration="2000">
 						<img src="./img/git-icon.svg" alt="Git" class="skills-logo" width="120" height="120">
 						<p class="skills-text">Git</p>
 					</li>
@@ -265,36 +268,45 @@
 	<footer class="footer">
 		<div class="wrapper">
 			<ul class="footer-list-links list">
-				<li class="footer-list-item">
+				<li class="footer-list-item" data-aos="zoom-in-up" data-aos-duration="1000">
 					<a href="mailto:shports61@gmail.com" class="footer-list-link link">
-						<img src="./img/gmail-icon.svg" alt="gmail" class="footer-img" id="gmail" width="38" height="38">
+						<img src="./img/gmail-icon.svg" alt="gmail" class="footer-img" id="gmail" width="38"
+							height="38">
 						<p class="footer-img-text">Gmail</p>
 					</a>
 				</li>
-				<li class="footer-list-item">
+				<li class="footer-list-item" data-aos="zoom-in-up" data-aos-duration="1000">
 					<a href="https://www.linkedin.com/in/alexander-shport" class="footer-list-link link">
-						<img src="./img/linkedin-icon.svg" alt="linkedin" class="footer-img" id="linkedin" width="38" height="38">
+						<img src="./img/linkedin-icon.svg" alt="linkedin" class="footer-img" id="linkedin" width="38"
+							height="38">
 						<p class="footer-img-text">Linkedin</p>
 					</a>
 				</li>
-				<li class="footer-list-item">
+				<li class="footer-list-item" data-aos="zoom-in-up" data-aos-duration="1000">
 					<a href="https://github.com/cavedium" class="footer-list-link link">
-						<img src="./img/github-icon.svg" alt="github" class="footer-img" id="github" width="38" height="38">
+						<img src="./img/github-icon.svg" alt="github" class="footer-img" id="github" width="38"
+							height="38">
 						<p class="footer-img-text">Github</p>
 					</a>
 				</li>
 			</ul>
 			<ul class="footer-list-pages list">
-				<li class="footer-list-pages-item">
-					<a href="#" class="page-link link">Projects</a>
+				<li class="footer-list-pages-item" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-anchor-placement="top-down">
+					<a href="./projects.html" class="page-link link">Projects</a>
 				</li>
-				<li class="footer-list-pages-item">
-					<a href="#" class="page-link link">Contact</a>
+				<li class="footer-list-pages-item" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-anchor-placement="top-down">
+					<a href="./contact.html" class="page-link link">Contact</a>
 				</li>
 			</ul>
-			<p class="footer-text">Developer 2024</p>
+			<p class="footer-text" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-anchor-placement="top-down">Developer 2024</p>
 		</div>
 	</footer>
+
+	<script>
+		AOS.init({
+			once: true
+		});
+	</script>
 </body>
 
 </html>
